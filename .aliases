@@ -1,0 +1,19 @@
+# Easier navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
+# Shorcuts for folders
+alias fd="cd ~/Downloads"
+alias fp="cd ~/programacion/projectos"
+alias fs="cd ~/programacion/software"
+
+# Shorcuts for programs
+alias a.=atom .
+
+# Lists files
+alias l="ls -lF"
+alias la="ls -alF"
+
+alias clear=cls
