@@ -2,10 +2,11 @@
   # gps=git push
   # gpl=git pull
   #
-  # git config --global alias.c "commit -m"
-  # git config --global alias.ca "commit -am"
-  # git config --global alias.a "add"
-  # git config --global alias.aa "add --all"
+  c = commit -m
+  ca = commit -am
+  a = add
+  aa = add --all
+	co = checkout
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
@@ -27,7 +28,7 @@
 	c = clone --recursive
 
 	# Commit all changes
-	ca = !git add -A && git commit -av
+	# ca = !git add -A && git commit -av
 
 	# Switch to a branch, creating it if necessary
 	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
