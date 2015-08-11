@@ -6,3 +6,5 @@
   'ctrl-shift-M': 'markdown-preview:toggle'
 'atom-text-editor:not([mini])':
   'ctrl-d': 'editor:delete-line'
+'atom-text-editor':
+  'ctrl-shift-f': 'atom-beautify:beautify-editor'
