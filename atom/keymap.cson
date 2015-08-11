@@ -4,3 +4,5 @@
   'ctrl-7': 'editor:toggle-line-comments'
 'atom-workspace, atom-workspace atom-text-editor':
   'ctrl-shift-M': 'markdown-preview:toggle'
+'atom-text-editor:not([mini])':
+  'ctrl-d': 'editor:delete-line'
