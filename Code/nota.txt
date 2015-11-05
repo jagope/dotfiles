@@ -1,1 +1,2 @@
 Windows: C:\Users\jgonzalo\AppData\Roaming\
+Linux: /home/<user>/.config
