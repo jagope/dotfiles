@@ -1,0 +1,8 @@
+# Shorcuts for folders
+alias fd="cd ~/Downloads"
+alias fp="cd ~/programacion/projectos"
+alias fs="cd ~/programacion/software"
+
+# Shorcuts for programs
+alias a.=atom .
+alias c.=code .

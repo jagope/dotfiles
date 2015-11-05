@@ -1,0 +1,11 @@
+# Easier navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
+# Lists files
+alias l="ls -lF"
+alias la="ls -alF"
+
+alias clear=cls
