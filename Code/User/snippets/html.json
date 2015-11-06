@@ -1,0 +1,18 @@
+{
+	"Print to console": {
+		"prefix": "html",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html>",
+			"\t<head>",
+			"\t\t<meta charset=\"utf-8\">",
+			"\t\t<title>$1</title>",
+			"\t</head>",
+			"\t<body>",
+			"\t\t$2",
+			"\t</body>",
+			"</html>"
+		],
+		"description": "create a initial html template"
+	}
+}
