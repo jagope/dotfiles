@@ -4,5 +4,15 @@
 		"key": "ctrl+d",
 		"command": "editor.action.deleteLines",
 		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+shift+f",
+		"command": "editor.action.format",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+7",
+		"command": "editor.action.commentLine",
+		"when": "editorTextFocus"
 	}
 ]
