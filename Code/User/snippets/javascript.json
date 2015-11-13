@@ -28,15 +28,27 @@
 		],
 		"description": "Create a it test"
 	},
-	"It test supertest": {
-		"prefix": "it_supertest",
+	"It test supertest get": {
+		"prefix": "it_supertest_get",
 		"body": [
 			"it('$1', function (done) {",
 			"\trequest(app)",
-			"\t\t.get('$2')",
+			"\t\t.get($2)",
 			"\t\t.expect($3, done);",
 			"});"
 		],
-		"description": "Create a it test for supertest"
+		"description": "Create a it get test for supertest"
+	},
+	"It test supertest post": {
+		"prefix": "it_supertest_post",
+		"body": [
+			"it('$1', function (done) {",
+			"\trequest(app)",
+			"\t\t.post($2)",
+			"\t\t.send('$3')",
+			"\t\t.expect($4, done);",
+			"});"
+		],
+		"description": "Create a it get test for supertest"
 	}
 }
