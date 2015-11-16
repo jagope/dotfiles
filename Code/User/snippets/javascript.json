@@ -51,6 +51,26 @@
 		],
 		"description": "Create a it get test for supertest"
 	},
+	"It test DELETE supertest": {
+		"prefix": "it_supertest_delete",
+		"body": [
+			"it('$1', function (done) {",
+			"\trequest(app)",
+			"\t\t.delete('$2')",
+			"\t\t.expect($3, done);",
+			"});"
+		],
+		"description": "Create a it delete test for supertest"
+	},
+	"before test": {
+		"prefix": "before",
+		"body": [
+			"before(function () {",
+			"$0",
+        	"});"
+		],
+		"description": "Create a before test"
+	},
 	"require node public module": {
 		"prefix": "req",
 		"body": [
