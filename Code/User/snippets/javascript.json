@@ -52,15 +52,17 @@
 		"description": "Create a it get test for supertest"
 	},
 	"require node public module": {
-		"prefix": "require",
+		"prefix": "req",
 		"body": [
-			"var $1 = require('$2');$3"
+			"var ${1:module} = require('$1');",
+			"$0"
 		]
 	},
 	"require node private module": {
-		"prefix": "require_private",
+		"prefix": "reqp",
 		"body": [
-			"var $1 = require('./$2');$3"
+			"var ${1:module} = require('./$1');",
+			"$0"
 		]
 	}
 }
