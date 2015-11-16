@@ -50,5 +50,17 @@
 			"});"
 		],
 		"description": "Create a it get test for supertest"
+	},
+	"require node public module": {
+		"prefix": "require",
+		"body": [
+			"var $1 = require('$2');$3"
+		]
+	},
+	"require node private module": {
+		"prefix": "require_private",
+		"body": [
+			"var $1 = require('./$2');$3"
+		]
 	}
 }
