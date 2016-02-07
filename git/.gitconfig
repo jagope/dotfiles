@@ -1,3 +1,11 @@
+[user]
+	name = Javier Gonzalo
+	email=jgonzalopelaez@gmail.com
+[core]
+	# descomentar en linux/mac
+	# autocrlf = input
+	# descomentar en windows
+	# autocrlf = true
 [alias]
   # gps=git push
   # gpl=git pull
@@ -27,7 +35,7 @@
 	p = !"git pull; git submodule foreach git pull origin master"
 
 	# Clone a repository including all submodules
-	c = clone --recursive
+	# c = clone --recursive
 
 	# Commit all changes
 	# ca = !git add -A && git commit -av
