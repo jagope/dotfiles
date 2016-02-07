@@ -8,7 +8,7 @@ alias .....="cd ../../../.."
 alias l="ls -lF"
 alias la="ls -alF"
 
-alias clear=cls
+alias cls=clear
 
 # Shorcuts for my folders
 alias fd="cd ~/Downloads"
