@@ -14,7 +14,7 @@
 	ca = commit -am
 
 	a = add
-	aa = add --all
+	aa = add --all :/
 
 	co = checkout
 
