@@ -16,5 +16,6 @@ alias fp="cd ~/programacion/proyectos"
 alias fs="cd ~/programacion/software"
 
 # Shorcuts for programs
-#alias a.=atom .
-#alias c.=code .
+#alias a="atom . &"
+#alias c="code . &"
+#alias e=eclipse
