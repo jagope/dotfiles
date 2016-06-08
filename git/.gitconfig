@@ -25,6 +25,9 @@
 	# View the current working tree status using the short format
 	s = status -s
 
+	# show the diff in an editor
+	df = diftool -y
+
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
 
