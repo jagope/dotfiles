@@ -1,0 +1,3 @@
+NODE_HOME=$HOME/software/node-v6.11.0-linux-x64
+
+export PATH=$PATH:$NODE_HOME/node/bin:$NODE_HOME/npm/bin
