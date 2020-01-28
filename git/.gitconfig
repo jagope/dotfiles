@@ -1,29 +1,22 @@
-[user]
-	name = Javier Gonzalo
-	email=jgonzalopelaez@gmail.com
-[core]
-	# descomentar en linux/mac
-	# autocrlf = input
-	# descomentar en windows
-	# autocrlf = true
-[alias]
-  # gps=git push
-  # gpl=git pull
-  #
-	c = commit -m
+# GIT ALIAS
+alias a="git add"
+alias aa="git add --all"
+alias branches='git branch -a'
+alias c="git commit"
+alias cm="git commit -m"
+alias log="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --max-count=20"
+alias logall="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
+alias logg="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --graph --max-count=20"
+alias loggall="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --graph --all"
+alias s="git status -s"
+alias go="git checkout"
+alias push="git push"
+alias pull="git pull"
+alias proyectos="cd /c/desarrollo/proyectos"
+
 	ca = commit -am
 
-	a = add
-	aa = add --all :/
-
 	co = checkout
-
-	# View abbreviated SHA, description, and history graph of the latest 20 commits
-	lg = log --oneline --decorate --graph
-	lga = log --oneline --decorate --graph --all
-
-	# View the current working tree status using the short format
-	s = status -s
 
 	# show the diff in an editor
 	df = diftool -y
@@ -33,12 +26,6 @@
 
 	# `git di $number` shows the diff between the state `$number` revisions ago and the current state
 	di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
-
-	# Pull in remote changes for the current repository and all its submodules
-	p = !"git pull; git submodule foreach git pull origin master"
-
-	# Clone a repository including all submodules
-	# c = clone --recursive
 
 	# Commit all changes
 	# ca = !git add -A && git commit -av
@@ -53,9 +40,6 @@
 
 	# Amend the currently staged files to the latest commit
 	amend = commit --amend --reuse-message=HEAD
-
-	# Credit an author on the latest commit
-	credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
 
 	# Interactive rebase with the given number of latest commits
 	reb = "!r() { git rebase -i HEAD~$1; }; r"
