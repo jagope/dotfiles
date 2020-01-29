@@ -1,3 +1,0 @@
-NODE_HOME=$HOME/programacion/software/node-v10.8.0-linux-x64
-
-export PATH=$PATH:$NODE_HOME/bin
