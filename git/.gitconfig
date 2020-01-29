@@ -13,6 +13,7 @@ alias go="git checkout"
 alias push="git push"
 alias pull="git pull"
 alias proyectos="cd /c/desarrollo/proyectos"
+alias update="git fetch --all"
 
 	ca = commit -am
 
