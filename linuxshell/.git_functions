@@ -1,0 +1,12 @@
+# GIT FUNCTIONS
+rebase() { git rebase -i HEAD~$1; }
+# new release
+newr() { releaseNumber=$1; git checkout -b release/${releaseNumber}; };
+# new epic
+newe() { ticketNumber=$1; git checkout -b epic/CONTACLI-${ticketNumber}; };
+# new feature
+newf() { ticketNumber=$1; git checkout -b feature/CONTACLI-${ticketNumber}; };
+# new bugfix
+newb() { ticketNumber=$1; git checkout -b bugfix/CONTACLI-${ticketNumber}; };
+# new hotfix
+newh() { ticketNumber=$1; git checkout -b hotfix/CONTACLI-${ticketNumber}; };
