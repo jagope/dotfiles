@@ -1,23 +1,21 @@
 # GIT ALIAS
-alias a="git add"
-alias aa="git add --all"
+alias ga="git add"
+alias gaa="git add --all"
 alias branches='git branch -a'
-alias c="git commit"
-alias cm="git commit -m"
+alias gc="git commit"
+alias gcm="git commit -m"
+alias gca="git commit --amend --reuse-message=HEAD"
+alias gundo="git reset --mixed HEAD~1"
 alias log="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --max-count=20"
 alias logall="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 alias logg="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --graph --max-count=20"
 alias loggall="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --graph --all"
-alias s="git status -s"
-alias go="git checkout"
-alias push="git push"
-alias pull="git pull"
-alias proyectos="cd /c/desarrollo/proyectos"
-alias update="git fetch --all"
-
-	ca = commit -am
-
-	co = checkout
+alias gs="git status -s"
+alias gswitch="git switch"
+alias gback="git switch -"
+alias gpush="git push"
+alias gpull="git pull --rebase"
+alias gupdate="git fetch --all"
 
 	# show the diff in an editor
 	df = diftool -y
@@ -38,9 +36,6 @@ alias update="git fetch --all"
 	tags = tag -l
 	branches = branch -a
 	remotes = remote -v
-
-	# Amend the currently staged files to the latest commit
-	amend = commit --amend --reuse-message=HEAD
 
 	# Interactive rebase with the given number of latest commits
 	reb = "!r() { git rebase -i HEAD~$1; }; r"
