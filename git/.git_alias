@@ -10,7 +10,7 @@ alias log="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgre
 alias logall="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 alias logg="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --graph --max-count=20"
 alias loggall="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --graph --all"
-alias gs="git status -s"
+alias gs="git status --short --branch"
 alias gswitch="git switch"
 alias gback="git switch -"
 alias gpush="git push"
